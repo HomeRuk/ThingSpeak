@@ -7,6 +7,7 @@
     android:background="#000000"
     android:padding="16dp"
     android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        
 <!--
     <TextView
         android:id="@+id/textJSON"
