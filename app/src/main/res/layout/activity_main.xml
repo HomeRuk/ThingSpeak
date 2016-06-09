@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp"
+    android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+<!--
+    <TextView
+        android:id="@+id/textJSON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="" />
+-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textID00"
+            android:height="100dp"
+            android:textSize="40dp"
+            android:text="ID:"
+            android:textColor="#ffffff"
+            android:layout_marginTop="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView01"
+            android:layout_alignStart="@+id/textView01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textID01"
+            android:height="100dp"
+            android:textSize="40dp"
+            android:textColor="#1100ff"
+            android:layout_alignTop="@+id/textID00"
+            android:layout_toRightOf="@+id/textID00"
+            android:layout_toEndOf="@+id/textID00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:id="@+id/textView01"
+            android:textSize="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:textColor="#ff0000"
+            android:textSize="120dp"
+            android:layout_below="@+id/textView01"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
