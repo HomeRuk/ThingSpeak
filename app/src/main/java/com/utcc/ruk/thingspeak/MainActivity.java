@@ -2,7 +2,6 @@ package com.utcc.ruk.thingspeak;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
