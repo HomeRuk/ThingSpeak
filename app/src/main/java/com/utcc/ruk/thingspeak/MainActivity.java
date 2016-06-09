@@ -2,7 +2,6 @@ package com.utcc.ruk.thingspeak;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -25,9 +24,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         String url = "https://api.thingspeak.com/channels/122038/feeds/last.json?api_key=";
         String apikey = "9A46C54NQCKHWNRF";
         final UriApi uriapi01 = new UriApi();
+
         uriapi01.setUri(url,apikey);
         Timer timer = new Timer();
         TimerTask tasknew = new TimerTask(){
@@ -48,7 +49,7 @@ public class MainActivity extends Activity {
             this.url = url;
             this.apikey = apikey;
             this.uri = url + apikey;
-        };
+        }
 
         protected  String getUri(){
             return uri;
